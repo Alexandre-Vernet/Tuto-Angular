@@ -1,7 +1,12 @@
+<!-- Variables -->
 <p>Vous avez {{age}} ans </p>
 <!-- <p> {{getAge()}} </p> -->
 <!-- <p> {{setAge(33)}} </p> -->
 
+<!-- Property & Event Binding -->
 <button (click)="incrementeAge()" >Incrémenter age</button>
 <button (click)="call()" [disabled]="isDoNotDisturb">Passer un appel</button>
 <button (click)="changeState()">Changer l'état de ne pas déranger</button>
+
+<p>Vous vous appelez {{name}} </p>
+<input type="text"[(ngModel)]="name">

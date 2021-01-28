@@ -9,6 +9,7 @@ export class MyComponentComponent implements OnInit {
 
   age: number = 21;
   isDoNotDisturb: boolean = true;
+  name: string = "Alex";
 
   constructor() { }
 
