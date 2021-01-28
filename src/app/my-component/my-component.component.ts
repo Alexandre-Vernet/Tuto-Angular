@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyComponentComponent implements OnInit {
 
   age: number = 21;
+  isDoNotDisturb: boolean = true;
 
   constructor() { }
 
@@ -20,6 +21,18 @@ export class MyComponentComponent implements OnInit {
 
   setAge(age: number): void {
     this.age = age;
+  }
+
+  incrementeAge(): void {
+    this.age++;
+  }
+
+  call(): void {
+    console.log("Dring Dring");
+  }
+
+  changeState(): void {
+    this.isDoNotDisturb = !this.isDoNotDisturb;
   }
 
 }

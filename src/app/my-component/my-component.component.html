@@ -1,3 +1,7 @@
 <p>Vous avez {{age}} ans </p>
-<p> {{getAge()}} </p>
-<p> {{setAge(33)}} </p>
+<!-- <p> {{getAge()}} </p> -->
+<!-- <p> {{setAge(33)}} </p> -->
+
+<button (click)="incrementeAge()" >Incrémenter age</button>
+<button (click)="call()" [disabled]="isDoNotDisturb">Passer un appel</button>
+<button (click)="changeState()">Changer l'état de ne pas déranger</button>
