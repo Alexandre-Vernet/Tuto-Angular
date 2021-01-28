@@ -4,10 +4,10 @@
 <!-- <p> {{setAge(33)}} </p> -->
 
 <!-- Property & Event Binding -->
-<button (click)="decrementAge()">Décrementer age</button>
-<button (click)="incrementAge()">Incrémenter age</button>
-<button (click)="call()" [disabled]="isDoNotDisturb">Passer un appel</button>
-<button (click)="changeState()">Changer l'état de ne pas déranger</button>
+<button class="btn btn-danger" (click)="decrementAge()">Décrementer age</button>
+<button class="btn btn-success" (click)="incrementAge()">Incrémenter age</button>
+<button class="btn btn-primary" (click)="call()" [disabled]="isDoNotDisturb">Passer un appel</button>
+<button class="btn btn-light" (click)="changeState()">Changer l'état de ne pas déranger</button>
 
 <!-- ngModel -->
 <p>Vous vous appelez {{name}} </p>
