@@ -14,15 +14,15 @@ export class MyComponentComponent implements OnInit {
   students = [
     {
       name: "Alex",
-      age: 3
+      age: 21
     },
     {
-      name: "Alex",
-      age: 3
+      name: "Tobby",
+      age: 999
     },
     {
-      name: "Alex",
-      age: 3
+      name: "Titeuf",
+      age: 12
     }
   ]
 
