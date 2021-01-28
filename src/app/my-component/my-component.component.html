@@ -19,13 +19,18 @@
 <div *ngIf="age >= 18">Vous êtes majeur</div>
 
 <!-- Boucles -->
-<table>
+<table style="text-align: center;">
   <tr>
     <th>Nom</th>
     <th>Age</th>
   </tr>
   <tr *ngFor="let student of students">
-    {{student.name}}
-    {{student.age}}
+    <td>
+      {{student.name}}
+
+    </td>
+    <td>
+      {{student.age}}
+    </td>
   </tr>
 </table>

@@ -24,14 +24,14 @@ export class MyComponentComponent implements OnInit {
       name: "Titeuf",
       age: 12
     }
-  ]
+  ];
+
+  date = new Date();
 
 
   constructor() { }
 
   ngOnInit() {
-    console.log(this.students);
-
   }
 
   getAge(): number {
