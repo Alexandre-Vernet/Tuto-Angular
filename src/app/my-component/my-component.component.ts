@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyComponentComponent implements OnInit {
 
+  age: number = 21;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getAge(): number {
+    return this.age;
+  }
+
+  setAge(age: number): void {
+    this.age = age;
   }
 
 }
