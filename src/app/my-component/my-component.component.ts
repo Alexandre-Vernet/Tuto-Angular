@@ -42,8 +42,11 @@ export class MyComponentComponent implements OnInit {
     this.age = age;
   }
 
-  incrementeAge(): void {
+  incrementAge(): void {
     this.age++;
+  }
+  decrementAge(): void {
+    this.age--;
   }
 
   call(): void {

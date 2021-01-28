@@ -4,7 +4,8 @@
 <!-- <p> {{setAge(33)}} </p> -->
 
 <!-- Property & Event Binding -->
-<button (click)="incrementeAge()">Incrémenter age</button>
+<button (click)="decrementAge()">Décrementer age</button>
+<button (click)="incrementAge()">Incrémenter age</button>
 <button (click)="call()" [disabled]="isDoNotDisturb">Passer un appel</button>
 <button (click)="changeState()">Changer l'état de ne pas déranger</button>
 
@@ -15,7 +16,7 @@
 <!-- Conditions -->
 <div *ngIf="isDoNotDisturb">Vous êtes en mode ne pas déranger</div>
 <div *ngIf="!isDoNotDisturb">Vous êtes en mode normal</div>
-<div *ngIf="age &lt;= 18">Vous êtes mineur</div>
+<div *ngIf="age &lt; 18">Vous êtes mineur</div>
 <div *ngIf="age >= 18">Vous êtes majeur</div>
 
 <!-- Boucles -->
