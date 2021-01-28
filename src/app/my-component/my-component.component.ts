@@ -9,11 +9,29 @@ export class MyComponentComponent implements OnInit {
 
   age: number = 21;
   isDoNotDisturb: boolean = true;
-  name: string = "Alex"
+  name: string = "Alex";
+
+  students = [
+    {
+      name: "Alex",
+      age: 3
+    },
+    {
+      name: "Alex",
+      age: 3
+    },
+    {
+      name: "Alex",
+      age: 3
+    }
+  ]
+
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.students);
+
   }
 
   getAge(): number {
